@@ -1,0 +1,94 @@
+* {
+	outline: none;
+}
+*:focus {outline:none;}
+*::-moz-focus-inner {border:0;}
+body, html {
+	font-size: 10px;
+	height: 100%;
+	margin: 0%;
+	padding: 0%;
+}
+body {
+	margin: 5% 10%;
+	height: 80%;
+}
+button {
+	cursor: pointer;
+}
+#genius-container {
+	margin:auto;
+	font-size: 2em;
+	text-align: center;
+	background: #222;
+	padding: 2%;
+	height:75%;
+	width: 40%;
+
+	-webkit-border-radius: 60em;
+	-moz-border-radius: 60em;
+	border-radius: 60em;
+}
+.genius-options {
+	height: 100%;
+}
+.commonButton {
+	border: 0.2em solid #222;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #fff;
+	margin-top: 2em;
+	padding: 1em 0em;
+	width: 10em;
+}
+.option {
+	display: block;
+	float: left;
+	width: 50%;
+	height: 50%;
+	border: 0.2em solid #222;
+}
+.option.top.left {
+	-webkit-border-top-left-radius: 30em;
+	-moz-border-radius-topleft: 30em;
+	border-top-left-radius: 30em;
+}
+.option.top.right {
+	-webkit-border-top-right-radius: 30em;
+	-moz-border-radius-topright: 30em;
+	border-top-right-radius: 30em;
+}
+.option.bottom.left {
+	-webkit-border-bottom-left-radius: 30em;
+	-moz-border-radius-bottomleft: 30em;
+	border-bottom-left-radius: 30em;
+}
+.option.bottom.right {
+	-webkit-border-bottom-right-radius: 30em;
+	-moz-border-radius-bottomright: 30em;
+	border-bottom-right-radius: 30em;
+}
+.green {
+	background-color: #2DC40B;
+}
+.green:hover, .green.ativo {
+	background-color: #39E014;
+}
+.yellow {
+	background-color: #EAE42A;
+}
+.yellow:hover, .yellow.ativo {
+	background-color: #FCF400;
+}
+.red {
+	background-color: #F90400;
+}
+.red:hover, .red.ativo {
+	background-color: #FF4444;
+}
+.blue {
+	background-color: #173FEF;
+}
+.blue:hover, .blue.ativo {
+	background-color: #2651FF;
+}

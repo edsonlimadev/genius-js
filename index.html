@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Genius Game</title>
+	<link rel="stylesheet" href="css/genius.css" type="text/css" />
+</head>
+<body>
+	<div id="genius-container">
+		<div class="genius-options">
+			<button class="option green left top" data-color="green">&nbsp;</button>
+			<button class="option yellow right top" data-color="yellow">&nbsp;</button>
+			<button class="option red left bottom" data-color="red">&nbsp;</button>
+			<button class="option blue right bottom" data-color="blue">&nbsp;</button>
+		</div>
+		<button class="commonButton startGame green">Novo Jogo</button>
+		<button class="commonButton repeatMove blue">Repetir Jogada</button>
+	</div>
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/Genius.js"></script>
+	<script type="text/javascript">
+		Genius.init({
+			container : $('#genius-container'),
+			buttonsContainer : $('.genius-options'),
+			buttons : $('button.option'),
+			startButton : $('.startGame'),
+			repeatButton : $('.repeatMove'),
+			initRange : 4,
+			initTimeChange : 1.3
+		});
+	</script>
+</body>
+</html>
