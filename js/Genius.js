@@ -13,7 +13,7 @@
 		initRange : 2,
 		currentRange : 2,
 		initTimeChange : 2,
-		init : function(settings, callback) {
+		config : function(settings, callback) {
 			// SETANDO CONFIGURAÇÕES
 			Genius.container = settings.container || null;
 			Genius.buttonsContainer = settings.buttonsContainer || null;
@@ -31,7 +31,7 @@
 			if(typeof callback != 'undefined')
 				callback();
 		},
-		start : function() {
+		init : function() {
 			Genius.sortearSequencia();
 		},
 		finishGame : function() {
@@ -50,7 +50,7 @@
 				startB = Genius.startButton,
 				repeatB = Genius.repeatButton,
 				registrarJogada = Genius.registrarJogada,
-				iniciarJogo = Genius.start,
+				iniciarJogo = Genius.init,
 				repetirJogada = Genius.apresentarSequencia,
 				total = btns.length,
 				i;
@@ -74,7 +74,7 @@
 					alert('Acertou Maninho :)');
 					ponteiroAtual = 0;
 					Genius.currentRange++;
-					Genius.start();
+					Genius.init();
 				}
 			} else {
 				Genius.finishGame();
